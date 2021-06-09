@@ -2,17 +2,6 @@
 
 Human analyis of chemical spectra such as Mass Spectra (MS), Infra-Red Specta (FTIR), and Nuclear Magnetic Resonance is both time consuming and potentially inaccurate. This project aims to develop a set of methodologies incorporating these spectra for the prediction of chemical functional groups and structures.
 
-This project is a stub, but we hope that it will spur development of machine learning methods for the analysis of chemical spectra.
-
-
-## Required Packages
-1) Numpy==1.18.5
-2) Rdkit==2020.03.1
-3) Pandas==1.0.5
-4) Jcamp
-5) Tensorflow==1.15.0 
-6) Matplotlib==3.1.1
-7) Sklearn==0.22.1
 
 ## Scraping
 ### Manual Scraping
@@ -34,8 +23,4 @@ python prepare_load_dataset.py --data_dir='./data/' --cas_list='species.txt'
 ```
 
 ## Train the model
-Run train.py to train the model. The model directory should contain params.json file listing all hyperparameters used for building the model. Optionally weights can be restored from pretrained model. 
-
-```
-python train.py --model_dir=./experiments/mlp_model --data_dir=./data/ 
-```
+Run Spectra_Train.ipynb to train the model.
